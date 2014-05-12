@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html ng-app="peeps">
+<head>
+    <title>Peeps</title>
+    <link href="/Content/bootstrap.yeti.min.css" rel="stylesheet" />
+    <style>
+        body { padding-top: 60px; }
+        btn:focus { outline: none; }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <a href="#" class="navbar-brand">Peeps</a>
+    </div>
+    <div ng-controller="Peeps.MainCtrl as main">
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="peep in main.peeps" class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{peep.firstName}} {{peep.lastName}}</h3>
+                        </div> 
+                        <div class="panel-body">
+                            <address>
+                                <span ng-if="!!peep.address.line1">{{peep.address.line1}}<br/></span>
+                                <span ng-if="!!peep.address.line2">{{peep.address.line2}}<br/></span>
+                                <span ng-if="!!peep.address.town">{{peep.address.town}}<br/></span>
+                                <span ng-if="!!peep.address.county">{{peep.address.county}}<br/></span>
+                                <span ng-if="!!peep.address.country">{{peep.address.country}}<br/></span>
+                                <span ng-if="!!peep.address.postalCode">{{peep.address.postalCode}}<br/></span>
+                            </address>
+                        </div>
+                        <div class="panel-footer">
+                            <button class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                            <button class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/angular.min.js"></script>
+    <script src="/scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
