@@ -10,6 +10,7 @@ namespace Peeps.Models
         public string LastName { get; set; }
         public Address Address { get; set; }
         public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<Email> EmailAddresses { get; set; }
     }
 
     public class Address
@@ -28,5 +29,11 @@ namespace Peeps.Models
         public string CountryCode { get; set; }
         public string AreaCode { get; set; }
         public string Number { get; set; }
+    }
+
+    public class Email
+    {
+        public string Type { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -120,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="App_Data\RavenDB\raven-data.ico" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -138,20 +137,6 @@
     <Content Include="scripts\angular.js" />
     <Content Include="scripts\angular.min.js" />
     <Content Include="scripts\angular.min.js.map" />
-    <Content Include="App_Data\RavenDB\Data" />
-    <Content Include="App_Data\RavenDB\IndexDefinitions\Auto%252fPeeps.index" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\CommitPoints\0000000000000000002\index.commitPoint" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\CommitPoints\0000000000000000002\segments_2" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\index.version" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\segments.gen" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\segments_2" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\write.lock" />
-    <Content Include="App_Data\RavenDB\Indexes\Auto%252fPeeps\_0.cfs" />
-    <Content Include="App_Data\RavenDB\logs\RVN.log" />
-    <Content Include="App_Data\RavenDB\logs\RVNres00001.jrs" />
-    <Content Include="App_Data\RavenDB\logs\RVNres00002.jrs" />
-    <Content Include="App_Data\RavenDB\logs\RVNtmp.log" />
-    <Content Include="App_Data\RavenDB\system\RVN.chk" />
     <Content Include="app.js.map" />
     <Content Include="scripts\app.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -190,8 +175,7 @@
     <Compile Include="SeedData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\RavenDB\IndexDefinitions\temp\" />
-    <Folder Include="App_Data\RavenDB\temp\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />
